@@ -19,14 +19,14 @@ public static void main (String [] args) {
 			System.out.println("   ");	
 			System.out.println("Enter 1 to create a new student");
 			System.out.println("   ");	
-			System.out.println("Enter 2 to navigate gpa");
+			System.out.println("Enter 2 to view highest gpa");
 			System.out.println("   ");
 			System.out.println("Enter 3 to log off");
 			System.out.println("   ");
 			System.out.println("Enter 4 to to total number of students ");
 			
 			
-			
+			// Switch statement for what case to access
 			int navigate;
 			navigate = input.nextInt();
 			switch (navigate) {
@@ -42,7 +42,8 @@ public static void main (String [] args) {
 						Class Student; {
 							int mg;
 							int fg;
-				
+							
+				//Student in database
 						if(idnumber == 7653) { 
 							System.out.println("Student name: Dan Martinez");
 							System.out.println("Student age: 19");
@@ -98,26 +99,26 @@ public static void main (String [] args) {
 						 	
 						 	break;
 						}
-						 			
+						 		// Create a new student 	
 						 	case 1:
 						 		
 						 	// Scanner
 								Scanner input1 = new Scanner(System.in);
 								
 								//Prompt user to enter the name of the student
-								System.out.println("Enter the first name of the student: ");
+								System.out.println("Enter the first name of the student-athlete: ");
 								String firstname = input1.next();
-								System.out.println("Enter the last name of the student: ");
+								System.out.println("Enter the last name of the student-athlete: ");
 								String lastname = input1.next();
 								
 								//Prompt the user to enter the age
 								System.out.println("Enter the age of " + firstname + " " + lastname + ":");
 								int age = input1.nextInt();
 								
-								System.out.println("Enter the grade year");
+								System.out.println("Enter the grade of the student-athlete");
 								int gradey = input1.nextInt();
 								
-								System.out.println("Enter the student date of birth: ");
+								System.out.println("Enter the student-athlete date of birth: ");
 								String dob = input1.next();
 								
 								int newidnumber = (int)(Math.random() * 9999);
@@ -125,7 +126,7 @@ public static void main (String [] args) {
 								
 								break;
 								
-				
+				// Highest GPA in system
 						 	case 2:
 						 	
 						 		double gpa[] = {4.0, 3.9, 3.3, 3.4, 3.2, 1.4, 3.8, 3.7, 3.1, 2.5};
@@ -139,18 +140,18 @@ public static void main (String [] args) {
 						 		}
 						 		
 						 		System.out.println("The highest gpa in the database is " + max);
-						 		
 						 		break;
 			
 			
 				
-				
+				// Log off database 
 			case 3:
-				System.out.println("Thank you for visitng ITS 250!");
+				System.out.println("Thank you for visitng! ");
 				System.out.println("User has logged off");
 				
 				break;
 				
+				// Calculate total number of students in database
 case 4:
 
 				// Variables
@@ -168,11 +169,11 @@ case 4:
 					j = (a + b + c + d); // total # of students 
 			
 					Final myObject = new Final();
-					 System.out.println("There are " + myObject.j + " students in ITS 250. ");
+					 System.out.println("There are " + myObject.j + " athletes in the database. ");
 			}
 				return;
 					 
 }}
 						
-						
+				
 	
