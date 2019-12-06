@@ -1,30 +1,178 @@
+package FinalProject;
 import java.util.Scanner; // Scanner is in the java.util package 
+public class Final{
+private static int j;
 
-public class Final {
-	public static void main (String [] args) {
-		
+public static void main (String [] args) {
+
+	
 			// Scanner
 			Scanner input = new Scanner(System.in);
 			
-			
-			//Prompt user to enter the name of the student
-			System.out.println("Enter the name of the student: ");
-			String name = input.next();
-			
-			//Prompt the user to enter the age
-			System.out.println("Enter the age of " + name + ":");
-			int age = input.nextInt();
-			
-			//Prompt the user to enter the grades of the students
-			System.out.println("Enter the midterm and final grade in math:"); 
-			double num1 = input.nextDouble();
-			double num2 = input.nextDouble();
-			
-			//Calculate Grade in math
-			System.out.println("The grade " + name + " made in math is: ");
-			double grade = (num1 + num2) / 2;
+		
+		
+		
+		
+			//Prompt user to enter number to navigate to section
+			System.out.println("Welcome to ITS 250!");
+			System.out.println("Enter 0 to enter student id");
+			System.out.println("   ");	
+			System.out.println("Enter 1 to create a new student");
+			System.out.println("   ");	
+			System.out.println("Enter 2 to navigate gpa");
+			System.out.println("   ");
+			System.out.println("Enter 3 to log off");
+			System.out.println("   ");
+			System.out.println("Enter 4 to to total number of students ");
 			
 			
-			 
-	}
-}
+			
+			int navigate;
+			navigate = input.nextInt();
+			switch (navigate) {
+			
+			
+			case 0:
+			
+					 
+				System.out.println("Please enter 4 digit student ID number");
+					 
+						int idnumber = input.nextInt(); 
+						
+						Class Student; {
+							int mg;
+							int fg;
+				
+						if(idnumber == 7653) { 
+							System.out.println("Student name: Dan Martinez");
+							System.out.println("Student age: 19");
+							System.out.println("Student grade: 10th");
+							System.out.println("Student date of birth: May 08 1997");
+							System.out.println("   ");	
+							System.out.println("Student midterm grade: ");
+							mg = input.nextInt();;
+							System.out.println("Student final grade: ");
+						    fg = input.nextInt();
+							System.out.println("Student final weighted grade: ");
+							int c = Math.addExact(mg, fg);
+							int d = c / 2;
+							System.out.println(d);
+							
+						 	
+						}
+						 	else if (idnumber == 7654) { 
+								System.out.println("Student name: Joe Taylor");
+								System.out.println("Student age: 20");
+								System.out.println("Student grade: 10th");
+								System.out.println("Student date of birth: Jan 18 1997");
+								System.out.println("   ");	
+								System.out.println("Student midterm grade: ");
+								mg = input.nextInt();
+								System.out.println("Student final grade: ");
+								fg = input.nextInt();
+								int c = Math.addExact(mg, fg);
+								int d = c / 2;
+								System.out.println(d);
+								
+						 	}
+							 	
+							 	else if (idnumber == 7655) { 
+									System.out.println("Student name: Greg Jennings");
+									System.out.println("Student age: 19");
+									System.out.println("Student grade: 10th");
+									System.out.println("Student date of birth: Oct 06 1997");
+									System.out.println("   ");	
+									System.out.println("Student midterm grade: ");
+									mg = input.nextInt();;
+									System.out.println("Student final grade: ");
+									fg = input.nextInt();
+									int c = Math.addExact(mg, fg);
+									int d = c / 2;
+									System.out.println(d);
+							
+								
+							 
+						 	}
+						 	 else 
+								 System.out.println("Error! the student id number " + idnumber + " is not in the system.");
+						 	
+						 	break;
+						}
+						 			
+						 	case 1:
+						 		
+						 	// Scanner
+								Scanner input1 = new Scanner(System.in);
+								
+								//Prompt user to enter the name of the student
+								System.out.println("Enter the first name of the student: ");
+								String firstname = input1.next();
+								System.out.println("Enter the last name of the student: ");
+								String lastname = input1.next();
+								
+								//Prompt the user to enter the age
+								System.out.println("Enter the age of " + firstname + " " + lastname + ":");
+								int age = input1.nextInt();
+								
+								System.out.println("Enter the grade year");
+								int gradey = input1.nextInt();
+								
+								System.out.println("Enter the student date of birth: ");
+								String dob = input1.next();
+								
+								int newidnumber = (int)(Math.random() * 9999);
+								System.out.println("Your 4 digit id number is " + newidnumber);
+								
+								break;
+								
+				
+						 	case 2:
+						 	
+						 		double gpa[] = {4.0, 3.9, 3.3, 3.4, 3.2, 1.4, 3.8, 3.7, 3.1, 2.5};
+						 		double max;
+						 		
+						 		int i;
+						 		max = gpa[0];
+						 		for (i = 0; i == 9; i++ );
+						 		{
+						 		if (gpa [i] > max) max = gpa[i];
+						 		}
+						 		
+						 		System.out.println("The highest gpa in the database is " + max);
+						 		
+						 		break;
+			
+			
+				
+				
+			case 3:
+				System.out.println("Thank you for visitng ITS 250!");
+				System.out.println("User has logged off");
+				
+				break;
+				
+case 4:
+
+				// Variables
+				int a;
+				int b;
+				int c;
+				int d;
+			
+				
+				//Constructor Class
+					a = 100; // # of freshman students
+					b = 130; // # of sophomore students
+					c = 80; // # of junior students
+					d = 68; // # of senior student 
+					j = (a + b + c + d); // total # of students 
+			
+					Final myObject = new Final();
+					 System.out.println("There are " + myObject.j + " students in ITS 250. ");
+			}
+				return;
+					 
+}}
+						
+						
+	
