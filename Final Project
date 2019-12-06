@@ -14,7 +14,7 @@ public static void main (String [] args) {
 		
 		
 			//Prompt user to enter number to navigate to section
-			System.out.println("Welcome to ITS 250!");
+			System.out.println("Welcome to the Recruiting Database!");
 			System.out.println("Enter 0 to enter student id");
 			System.out.println("   ");	
 			System.out.println("Enter 1 to create a new student");
@@ -169,7 +169,7 @@ case 4:
 					j = (a + b + c + d); // total # of students 
 			
 					Final myObject = new Final();
-					 System.out.println("There are " + myObject.j + " athletes in the database. ");
+					 System.out.println("There are " + myObject.j + " students in the system. ");
 			}
 				return;
 					 
